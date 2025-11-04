@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Dechen Wangmo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #D8B4FE, #FBCFE8); /* Purple to pink gradient */
+            color: #2e2e2e;
+        }
+
+        nav {
+            background-color: #7C3AED; /* Dark purple nav */
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px;
+            min-height: calc(100vh - 60px); /* full height minus nav */
+        }
+
+        .left {
+            flex: 1 1 400px;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .right {
+            flex: 1 1 200px;
+            max-width: 300px;
+            padding: 20px;
+            text-align: right;
+        }
+
+        h1 {
+            color: #5B21B6; /* Deep purple heading */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .name-box {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .right {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'aboutme' %}">About Me</a>
+</nav>
+
+
+    <div class="content">
+        <div class="left">
+            <h1>About Me 🌸</h1>
+            <p>Hello! I’m <strong>Dechen Wangmo</strong> 👋</p>
+            <p>
+                I’m an aspiring Web Developer and a Computer Science student with a passion for coding, creativity, and problem-solving. 
+                I enjoy learning new technologies and applying them to real-world projects that make a difference.
+            </p>
+            <p>
+                <strong>My Skills & Interests:</strong><br>
+                - Web Development (HTML, CSS, JavaScript, Django)<br>
+                - Problem Solving & Logical Thinking<br>
+                - UI/UX Design and Creative Projects<br>
+                - Exploring new tech trends and tools
+            </p>
+            <p>
+                <strong>Hobbies & Personal Interests:</strong><br>
+                Outside of coding, I love reading, exploring the outdoors, and creating digital art. 
+                I also enjoy connecting with people, learning from different perspectives, and experimenting with innovative ideas.
+            </p>
+            <p>
+                <strong>My Goals:</strong><br>
+                I aim to build meaningful web applications, grow as a developer, and contribute to projects that combine creativity and technology. 
+                Continuous learning and personal growth are at the core of my journey.
+            </p>
+        </div>
+        <div class="right">
+            <div class="name-box">
+                Dechen Wangmo
+            </div>
+        </div>
+    </div>
+</body>
+</html>
